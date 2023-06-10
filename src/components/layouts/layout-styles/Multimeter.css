@@ -1,0 +1,67 @@
+#controls {display:none;}
+#video-container, .hide {display:none !important;}
+
+.voltage-container {display:flex; justify-content:center; text-align:center;}
+#currentSwitch {display:flex; justify-content:center; align-items:center; width:auto; margin:0;}
+
+.mid-container {position:relative;}
+#dropzones {position:relative; display:inline-block;}
+.drop-container{display:block; z-index:9999;}
+.drop {background:red; opacity:1; animation-name:color; animation-duration:3s; animation-iteration-count:infinite; border-radius:100%;}
+@keyframes color{
+    0% 	{opacity:1;}
+    50% {opacity:.1;}
+    100 {opacity:1;}
+}
+#drop1-cont {position:absolute; top:33.5%; left:40.0%;}
+#drop2-cont {position:absolute; top:33.5%; left:51.0%;}
+#drop3-cont {position:absolute; top:33.5%; left:61.5%;}
+#drop4-cont {position:absolute; top:33.5%; left:72.2%;}
+#drop5-cont {position:absolute; top:68.0%; left:08.0%;}
+#drop6-cont {position:absolute; top:68.0%; left:40.0%;}
+#drop7-cont {position:absolute; top:68.0%; left:61.5%;}
+#drop8-cont {position:absolute; top:68.0%; left:83.0%;}
+
+.drop {position:relative; width:35px; height:35px;}
+#currentChart {}
+
+.mc .options a.option {margin:0 !important; padding:0 !important;}
+
+.multimeter-container {text-align:left;}
+.col-sm-5.multimeter-container {}
+
+.dmm-container {position:relative; display:inline-block;}
+#dmm {}
+
+#probe-container {position:absolute; top:0; right:0;}
+#probe-container #red-probe {position:absolute; top:0; right:0; max-width:none; cursor:pointer;}
+#red-probe {position:absolute; top:14px; right:14px; max-width:none; cursor:pointer; z-index:9999999; animation-name:probe}
+
+#readOut {position:absolute; top:12%; right:52%; display:inline-block; font:bold 20px/20px 'Orbitron', sans-serif; text-align:52%; text-transform:uppercase;}
+
+.dmm-table.col-sm-12 {margin-top:50px; padding:0; border-top:1px solid #000; border-right:1px solid #000; border-left:1px solid #000;}
+.table-row.col-sm-12 {padding:0;}
+.row-cell {padding:10px; text-align:left; border-bottom:1px solid #000; border-right:1px solid #000;}
+.row-cell.last {border-right:none;}
+
+#cover, #interact, video{
+    display:none !important;
+}
+#content {height:105% !important;}
+/*#bottomnav-container {position:relative; background:none; border:none;}*/
+/*#bottomnav-container #testNav {position:fixed; top:0; width:100%; text-align:right; padding-right:10%; background:none;}*/
+#currentSwitch:hover {cursor:pointer;}
+#imageContainer {flex:2 0 407px; margin:0 auto; text-align:center}
+.multimeter-container {flex:2 0 407px;}
+#imageContainer img {max-width:none !important; max-height:none !important;}
+.dmm-container {margin-top:30px;}
+.toggle-dmm-text {margin-top:30px; font-style:italic;}
+#question-container {padding:0 !important;}
+
+@media screen and (max-width:640px){
+    .voltage-container {display:block !important;}
+    .mid-container {display:inline-block !important; width:49%;}
+    .multimeter-container {float:none !important; display:block !important; width:100% !important;}
+    .dmm-table.col-sm-12 {width:100%;}
+    .dmm-table.col-sm-12 .row-cell.col-sm-6 {width:50%;}
+}

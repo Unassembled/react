@@ -1,0 +1,53 @@
+.correct-message,
+.error-message {
+    margin-top: 5px;
+    display: none;
+}
+
+#incorrectResponce, #noResponce {}
+
+* {}
+
+.dropzones {position:absolute;}
+.drop_container {position:absolute; display:block; width:34.1%; height:5.9%; margin:0; padding:0;}
+.drop {position:relative; display:block; width:100%; height:100%; font:normal 18px Arial, Helvetica, sans-serif;}
+.dropzones.col-sm-6 {margin-right:10px;}
+
+.container1 {top:64.1%; left:64.8%;}
+.container2 {top:73.8%; left:64.8%;}
+.container3 {top:83.5%; left:64.8%;}
+.container4 {top:93.3%; left:64.8%;}
+
+.draggable_container {display:block; width:100%; margin:10px 0; text-align:center;}
+.draggable_box {border:1px solid #000; }
+.drag {display:block; width:100%; height:auto; padding:7px; font:bold 12px/16px 'Orbitron', Arial, Helvetica, sans-serif; text-align:center; cursor:pointer; box-sizing: border-box;}
+
+.drop .drag {position:absolute; top:-4px; right:0; bottom:0; left:-1px; width:103%; height:130%; padding:0 !important; border:5px solid;}
+.drop .drag:before {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.drop .drag span {display:inline-block; vertical-align:middle; font-size:16px; line-height:16px;}
+
+.col-sm-12,
+.col-sm-6 {margin:0; padding:0;}
+
+#imageContainer {width:auto !important; height:auto !important; padding:0;}
+#imageContainer img {width:100%;}
+#dd1 {position:relative; z-index:99998;}
+#myimage {z-index:0;}
+
+.img-magnifier-container {position:relative;}
+.image-label {position:absolute; display:inline-block; font-weight:900; color:red;}
+
+.btn-group {display:flex !important; width:100%; text-align:center;}
+#checkButton, #resetButton {float:none !important; justify-content:center; width:48%; min-width:auto; min-height:auto; margin:5px; padding:7px; font:bold 16px/16px 'Orbitron', sans-serf; cursor:pointer;}
+
+.mc {width:100% !important;}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:720px){
+    .target_column {flex:2 0 200px; box-sizing:border-box; margin:0px}
+    .col-sm-4.center {flex:2 0 200px; box-sizing:border-box; margin:5px}    
+}
