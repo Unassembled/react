@@ -79,5 +79,9 @@
     "gh-pages": "^5.0.0",
     "rimraf": "./node_modules/rimraf/bin.js",
     "clean" : "rimraf js/",
-    "compile": "npm run clean && tsc -p ./"  }
+    "compile": "npm run clean && tsc -p ./"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
+  }
 }
