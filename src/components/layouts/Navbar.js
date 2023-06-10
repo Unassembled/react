@@ -69,7 +69,7 @@ class Navbar extends Component {
           transition: 'filter 0.5s ease',
         },
       }
-    const menu = ['React & 3JS', 'Drag And Drop', 'Vacuum Gauge', 'Multimeter', 'Contact Me'];
+    const menu = ['React & 3JS', 'Drag \'N Drop', 'Vacuum Gauge', 'Multimeter', 'Contact Me'];
     const ref = ['./', '/drag-and-drop', '/gauge', '/multimeter', '/contact'];
     const menuItems = menu.map((val,index)=>{
       return (
