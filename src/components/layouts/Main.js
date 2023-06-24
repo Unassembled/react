@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
+// import { useGLTF } from '@react-three/drei';
+import car from "../../car/FutureCar.gltf";
+
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 // import { TDSLoader } from 'three/examples/jsm/loaders/TDSLoader';
 // import { ColladaLoader } from 'three/examples/jsm/loaders/ColladaLoader';
@@ -81,8 +84,8 @@ class Main extends Component {
         *****  GLTF LOADER  *****
         ************************/
         const loader = new GLTFLoader();
-        // const downloader = new URL('../car/FuturCar-processed.glb',import.meta.url);
-        loader.load('/car/FutureCar-processed.glb', gltf => {
+        // loader.setPath('/react/car');
+        loader.load('/react/car/FutureCar-processed.glb', gltf =>{
         // loader.load('/sphere-bot/Sphere%20Bot%20Basic%206.gltf', gltf => {
         // loader.load('/cgtrader/dragon.glb', gltf => {
         // loader.load('/macross/model.gltf', gltf => {
