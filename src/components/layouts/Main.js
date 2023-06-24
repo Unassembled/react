@@ -7,7 +7,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 // import { OBJLoader2 } from 'three/examples/jsm/loaders/OBJLoader2';
 // import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Car from "../../car/FutureCar.gltf";
 
 class Main extends Component {
     constructor(props) {
@@ -82,8 +81,8 @@ class Main extends Component {
         *****  GLTF LOADER  *****
         ************************/
         const loader = new GLTFLoader();
-        // loader.load({Car}, gltf => {
-        loader.load('../../car/FutureCar.gltf', gltf => {
+        // const downloader = new URL('../car/FuturCar-processed.glb',import.meta.url);
+        loader.load('/car/FutureCar-processed.glb', gltf => {
         // loader.load('/sphere-bot/Sphere%20Bot%20Basic%206.gltf', gltf => {
         // loader.load('/cgtrader/dragon.glb', gltf => {
         // loader.load('/macross/model.gltf', gltf => {

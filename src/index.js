@@ -6,7 +6,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
-const container = document.getElementById('app');
+// const container = document.getElementById('app');
 // const root = createRoot(container);
 
 // if(window.location.pathname.length>1)
