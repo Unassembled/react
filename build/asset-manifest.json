@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/react/static/css/main.ad22e65a.css",
-    "main.js": "/react/static/js/main.f779b04b.js",
+    "main.js": "/react/static/js/main.bfb445d0.js",
     "static/media/vacuum-gauge.png": "/react/static/media/vacuum-gauge.381061317e4edd179d5e.png",
     "static/media/3-1-1.png": "/react/static/media/3-1-1.b941ad41f2bfc1347f0b.png",
     "static/media/dmm-dialless-volt.png": "/react/static/media/dmm-dialless-volt.6b878bc71cbae973f848.png",
     "static/media/2-4-2.png": "/react/static/media/2-4-2.5ee6f7ad1cf5266957bf.png",
+    "static/media/FutureCar.gltf": "/react/static/media/FutureCar.154e64ad2c5bca0510ab.gltf",
     "index.html": "/react/index.html"
   },
   "entrypoints": [
     "static/css/main.ad22e65a.css",
-    "static/js/main.f779b04b.js"
+    "static/js/main.bfb445d0.js"
   ]
 }
