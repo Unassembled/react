@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import GageImage from "../../images/gauge/vacuum-gauge.png";
 
 class Gauge extends Component {
     componentWillUnmount() {
@@ -407,7 +408,7 @@ class Gauge extends Component {
         }
         
         /*SVG*/
-        svg {max-width:100%; margin: 0px; padding: 0; cursor: pointer; background:url('/images/gauge/vacuum-gauge.png') center center no-repeat; background-size:contain;/*border: 1px solid #0a1a17;*/}
+        svg {max-width:100%; margin: 0px; padding: 0; cursor: pointer; background:url(`+GageImage+`) center center no-repeat; background-size:contain;/*border: 1px solid #0a1a17;*/}
         svg.focusable {/*border: 1px solid #0f4534;*/}
         
         .outline,
@@ -445,7 +446,7 @@ class Gauge extends Component {
     }
     
     render() {
-
+		console.log(GageImage);
         return( 
         <>
         <div id="question-container">

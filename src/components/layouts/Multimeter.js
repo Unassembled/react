@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { gsap, Draggable } from 'gsap/all';
+import Chart from "../../images/multimeter/2-4-2.png";
+import Mulitmeter from "../../images/multimeter/dmm-dialless-volt.png";
+import Dial from "../../images/multimeter/adjustable-dial.png";
+import Probe from "../../images/multimeter/red-probe.png"
 // import { appendScript } from '../customImports/appendScript';
 // import { TweenMax, TweenLite, toArray } from 'gsap/gsap-core';
 
@@ -614,7 +618,7 @@ class Multimeter extends Component {0
 							<div className="drop" data-id="drop8"></div>
 						</div>
 
-						<img id="currentChart" src="./images/multimeter/2-4-2.png" draggable="false" onDragStart={this.returnFalse} alt="electrical termninals" />
+						<img id="currentChart" src={Chart} draggable="false" onDragStart={this.returnFalse} alt="electrical termninals" />
 					</div>
 				</div>
 				<div className="col-sm-5 multimeter-container">
@@ -626,11 +630,11 @@ class Multimeter extends Component {0
 					</div>
 					<div className="dmm-container">
 						{/* <!-- <img id="ddm" src="./images/multimeter/2-2-4-multimeter-on.png" draggable="false" onDragStart="return false;" alt="DMM reading" /> --> */}
-						<img id="dmm-dialless" src="./images/multimeter/dmm-dialless-volt.png" draggable="false" onDragStart={this.returnFalse} alt="testing dmm" style={{position:'relative'}} />
-						<img id="adjustable-dial" className="switch" src="./images/multimeter/adjustable-dial.png" draggable="false" onDragStart={this.returnFalse} alt="rotating dial" style={{position:'absolute', top:'182px', left:'46px', transform:'rotate(65deg)', cursor:'pointer'}} />
+						<img id="dmm-dialless" src={Mulitmeter} draggable="false" onDragStart={this.returnFalse} alt="testing dmm" style={{position:'relative'}} />
+						<img id="adjustable-dial" className="switch" src={Dial} draggable="false" onDragStart={this.returnFalse} alt="rotating dial" style={{position:'absolute', top:'182px', left:'46px', transform:'rotate(65deg)', cursor:'pointer'}} />
 
 						<div id="probe-container">
-							<img id="red-probe" draggable="true" src="./images/multimeter/red-probe.png" alt="a red probe" />
+							<img id="red-probe" draggable="true" src={Probe} alt="a red probe" />
 						</div>
 						<div id="readOut" className="counter">
 							

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import MainImage from "../../images/drag-n-drop/3-1-1.png";
+
 
 class DragNDrop extends Component {
     /******************************************************************************************************************************
@@ -591,7 +593,6 @@ class DragNDrop extends Component {
 
 	returnFalse = () => { return false;}
     render() {
-
         return( 
         <>
             <div id="question-container">
@@ -610,7 +611,7 @@ class DragNDrop extends Component {
 						<div id="drop-container4" className="drop_container container4">
 							<div id="drop4" className="target_box drop" data-id="drop4" data-correct="drag2"></div>
 						</div>
-						<img id="myimage" src={window.location.origin + "/images/drag-n-drop/3-1-1.png"} onDragStart={this.returnFalse} alt="something" />
+						<img id="myimage" src={MainImage} onDragStart={this.returnFalse} alt="something" />
 					</div>
 				</div>
 			</div>
